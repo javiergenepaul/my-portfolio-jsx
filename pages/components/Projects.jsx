@@ -2,7 +2,7 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div>Project</div>
+    <div className='h-screen'>Project</div>
   )
 }
 

@@ -14,7 +14,9 @@ export default function Home() {
             </Head>
 
             <main className="max-w-[1280px] w-full mx-auto py-16 h-screen">
+                <Projects />
                 <Hero />
+                <Projects />
                 {/* <Nav /> */}
                 {/* <About />
                 <Skills />
