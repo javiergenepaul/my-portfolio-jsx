@@ -5,8 +5,8 @@ import Skills from './Skills'
 
 function Hero() {
   return (
-    <div id="hero" className='flex flex-row gap-16 h-full py-16'>
-      <div className="flex flex-col justify-between basis-2/5">
+    <div className='flex flex-row gap-32 h-screen px-8 py-16'>
+      <div className="flex flex-col justify-between h-full basis-2/5">
         <div className="flex flex-col gap-4">
           <h1 className='text-7xl font-bold '>Hello, I'm <br /> <span className='hover:text-primary transition duration-150 cursor-pointer'>Paul Javier</span></h1>
           <p>Do exercitation qui labore enim. Occaecat consectetur mollit minim non velit nulla nisi non. Pariatur deserunt mollit ullamco ullamco culpa pariatur deserunt sunt anim ipsum. Officia proident tempor et ea cupidatat proident aute anim. Ea sunt anim consequat voluptate consectetur minim sint proident magna exercitation ullamco occaecat. </p>
@@ -29,7 +29,7 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="basis-3/5 w-full h-full">
+      <div className="basis-3/5 w-full h-full overflow-y-scroll scrollbar-hide">
         <Skills/>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import {useState,useEffect} from "react";
 import { Icon } from "@iconify/react";
 import { useTheme } from 'next-themes';
 
@@ -6,13 +6,15 @@ function Nav() {
 	const {systemTheme, theme, setTheme} = useTheme();
 	const currentTheme = theme === 'system' ? systemTheme : theme;
 
-	// const [mounted, setMounted] = useState(false);
+    // console.log(currentTheme);
 
-	// useEffect(() => {
-	// 	setMounted(true);
-	// }, []);
+	const [mounted, setMounted] = useState(false);
 
-	// if (!mounted) return null;
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+    if (!mounted) return null;
+
 
     return (
         <div className="text-white flex justify-between py-[12px] items-center">
@@ -32,6 +34,7 @@ function Nav() {
 					{currentTheme === 'light' ? <Icon icon="carbon:light-filled" width="24" height="24" />: <Icon icon="ic:outline-dark-mode" width="24" height="24" />}
 				</button>
             </div>
+
         </div>
     );
 }
